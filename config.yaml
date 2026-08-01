@@ -1,0 +1,95 @@
+# Discord bot configuration
+#
+# Secrets should be supplied as environment variables (for example, via .env).
+# The ${NAME} form is resolved when the bot starts.
+
+bot:
+  token: "${DISCORD_BOT_TOKEN}"
+  prefix: "/"
+  status: "online"
+  activity: "your community"
+  activity_type: "watching" # playing | watching | listening | streaming
+
+# Default colour for embeds that do not explicitly use a semantic colour.
+appearance:
+  embed_color: "blurple" # Discord blurple (#5865F2)
+
+logging:
+  level: "INFO"
+  file: "logs/bot.log"
+  format: "[%(asctime)s] [%(levelname)s] %(message)s"
+  date_format: "%H:%M:%S"
+
+# Use 0 for an unused channel ID.
+channels:
+  moderation_log: 0
+  appeal_log: 0
+  ticket_log: 0
+  automod_log: 0
+
+tickets:
+  panel_channel: 0
+  category_name: "Tickets"
+  channel_prefix: "ticket-"
+  autoclose_prefix: "hourglass-"
+  autoclose_hours: 24
+  autoclose_emoji: "⌛"
+  transcript_history_limit: 500
+  ping_roles: []
+  panel_title: "Create a Ticket"
+  panel_description: "Click a button below to create a ticket."
+  welcome_text: "Describe your issue and include any relevant screenshots or links."
+  buttons:
+    - label: "Support"
+      emoji: "🎫"
+      questions:
+        - label: "What do you need help with?"
+          required: true
+
+ai:
+  api_key: "${GROQ_API_KEY}"
+  channel_id: 0
+  cooldown_seconds: 0
+  models:
+    - "meta-llama/llama-4-scout-17b-16e-instruct"
+
+music:
+  spotify_client_id: "${SPOTIFY_CLIENT_ID}"
+  spotify_client_secret: "${SPOTIFY_CLIENT_SECRET}"
+  ffmpeg_path: "ffmpeg"
+  max_queue_size: 100
+  idle_timeout: 300
+
+emojis:
+  success: "✅"
+  fail: "❌"
+  error: "❌"
+  info: "ℹ️"
+  ticket: "🎫"
+  lock: "🔒"
+  unlock: "🔓"
+  ban: "🔨"
+  kick: "👢"
+  timeout: "⏲️"
+  trash: "🗑️"
+  report: "🚩"
+  slowmode: "🐢"
+  trophy: "🏆"
+  afk: "💤"
+  online: "🟢"
+  down: "🔴"
+  uptime: "⏱️"
+  logs: "📜"
+  star: "⭐"
+  sticky: "📌"
+  language: "🌐"
+  link: "🔗"
+  shield: "🛡️"
+  ping: "🏓"
+  announce: "📢"
+  booster: "🚀"
+  left: "◀️"
+  right: "▶️"
+  download: "📥"
+  add: "➕"
+  remove: "➖"
