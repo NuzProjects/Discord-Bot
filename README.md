@@ -64,10 +64,6 @@ are a better fit for their existing stateful controls.
 
 Embeds that do not supply a colour default to Discord blurple (`#5865F2`).
 
-## Commands
-
-- `/ping` — displays the Discord WebSocket and command-response latency.
-
 ## Pterodactyl hosting
 
 Use a Python 3.12 image, set `PY_FILE` to `main.py`, and leave `PY_PACKAGES`
