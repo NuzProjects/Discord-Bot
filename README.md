@@ -1,8 +1,6 @@
-<<<<<<< HEAD
 # Discord Bot
 
-This bot runs as a single Discord process. It does not start a web server or
-dashboard. Configure it with `config.yaml` and a local `.env` file.
+This bot runs as a single Discord process. Configure it with `config.yaml` and a local `.env` file.
 
 ## Set it up
 
