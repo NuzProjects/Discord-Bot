@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Discord Bot
 
 This bot runs as a single Discord process. It does not start a web server or
@@ -107,3 +108,7 @@ existing history. Never commit `.env` or live credentials.
 If this project previously contained live Discord, Groq, Spotify, or OAuth
 credentials, revoke and regenerate them before running the bot. Do not commit
 your `.env` file.
+=======
+# Discord-Bot
+Free and open source Discord Bot featuring Discord ComponentsV2
+>>>>>>> origin/main
